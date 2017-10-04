@@ -7,4 +7,10 @@ public class LinkedList {
     public LinkedList(){
         head = null;
     }
+    
+    public void addLast(String value){
+        Node hold = head;
+        if (hold == null)
+            
+    }
 }
