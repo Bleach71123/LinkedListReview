@@ -6,4 +6,16 @@ public class LinkedList {
     public LinkedList(){
         head = null;
     }
+    
+    public String getFirst(){
+        
+        return head.value;
+        
+    }
+    public String getLast(){
+        Node hold = head;
+        while (hold != null){
+            
+        }
+    }
 }
