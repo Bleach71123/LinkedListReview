@@ -1,10 +1,14 @@
 package linkedlistreview;
 
 public class LinkedList {
+
     protected Node head;
-    protected String test;
     
-    public LinkedList(){
+    public LinkedList() {
         head = null;
+    }
+
+    public void addFirst(String v) {
+    	head = new Node(v, head, null);
     }
 }
