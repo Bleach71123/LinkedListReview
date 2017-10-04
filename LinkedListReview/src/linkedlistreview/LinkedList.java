@@ -12,7 +12,7 @@ public class LinkedList {
         Node hold = head;
         while (hold.next != null)
             hold = hold.next;
-        hold.next = new Node(value, hold, null);
+        hold.next = new Node(value, null, hold);
     }
             
     public String getFirst(){
@@ -32,6 +32,17 @@ public class LinkedList {
     public void addFirst(String v) {
     	head = new Node(v, head, null);
 
+    }
+    
+    @Override
+    public String toString(){
+        Node hold = head;
+        String output = "";
+        while (hold != null){
+            output += hold.value + " ";
+            hold = hold.next;
+        }
+        return output;
     }
     
 }
